@@ -14,8 +14,8 @@ defmodule OpDesafiosStats do
   end
 
   defp cleanFeature(lang_feature) do
-    x = String.split(lang_feature, "-")
-    get_lang(x)
+    lng = String.split(lang_feature, "-")
+    get_lang(lng)
   end
 
   defp get_lang([lang]) do
