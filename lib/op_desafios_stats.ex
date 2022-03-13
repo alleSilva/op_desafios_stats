@@ -1,6 +1,6 @@
 defmodule OpDesafiosStats do
   def call() do
-    File.read!("desafios.txt")
+    File.read!("desafio-05.txt")
     |> String.split()
     |> Enum.map(& separate(&1))
     |> Enum.reduce(%{}, fn x, acc -> Map.update(acc, List.last(x), 1, &(&1 + 1)) end)
